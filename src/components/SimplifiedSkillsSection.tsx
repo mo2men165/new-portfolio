@@ -33,7 +33,7 @@ const SimplifiedSkillsSection: React.FC = () => {
   };
 
   return (
-    <div className="w-full text-white py-20">
+    <div className="w-full text-white py-20" id='skills'>
       <div className="container mx-auto px-6">
         
         {/* Section Header */}

@@ -51,13 +51,16 @@ const additionalSkills = [
     skills: [
       "JavaScript (ES6+)",
       "TypeScript",
+      "React.js",
+      "Next.js",
       "Redux Toolkit",
       "React Query",
-      "HTML5/CSS3",
+      "HTML5",
+      "CSS3",
       "SASS/SCSS",
-      "Tailwind CSS", 
+      "Tailwind CSS",
       "Material-UI",
-      "Shadcn/UI",
+      "Shadcn/UI (Radix UI)",
       "Three.js",
       "GSAP",
       "Framer Motion",
@@ -72,29 +75,27 @@ const additionalSkills = [
       "Express.js",
       "RESTful APIs",
       "GraphQL",
-      "API Documentation",
+      "MongoDB & Mongoose",
       "Redis",
-      "JWT Auth",
-      "OAuth",
+      "Authentication (JWT, OAuth)",
       "Socket.io",
       "Webhooks",
-      "Serverless Functions"
+      "Serverless Functions",
+      "API Documentation (Swagger/OpenAPI)"
     ]
   },
   {
-    category: "Development Tools",
+    category: "Development Tools & Testing",
     skills: [
       "Git & GitHub",
+      "GitHub Actions",
       "Jest",
       "React Testing Library",
       "Cypress",
       "Vite",
-      "Storybook",
       "ESLint",
-      "Prettier",
-      "npm/yarn",
-      "Webpack",
-      "TypeDoc"
+      "Storybook",
+      "CI/CD Pipelines"
     ]
   },
   {
@@ -102,12 +103,10 @@ const additionalSkills = [
     skills: [
       "Docker",
       "Kubernetes (basics)",
-      "CI/CD Pipelines",
       "AWS Services",
       "Vercel",
       "Netlify",
-      "Heroku",
-      "Digital Ocean",
+      "DigitalOcean",
       "MongoDB Atlas",
       "Performance Optimization"
     ]
@@ -198,7 +197,7 @@ const testimonials = [
     name: "Aceil El-Gazar",
     position: "EGA's CEO",
     review:
-      "Awesome work - really exceeded our expectations and vision in terms of our website development.",
+      "Moamen did a fantastic job building our new bilingual website. He delivered a clean, modern design with Next.js and Tailwind that runs fast and works seamlessly across devices. He was professional, proactive, and easy to work with — the site has already improved our online presence",
   },
 ];
 
@@ -250,7 +249,7 @@ const myProjects = [
       desc: 'RevAmp Hub partners with businesses to unlock the full potential of HubSpot and other CRMs through tailored automations, integrations, and workflow enhancements.',
       subdesc:
         'Developed using React and Vite, with Tailwind CSS and Framer Motion, RevAmp Hub delivers a fast and interactive user experience optimized for performance and smooth animations',
-      href: 'https://revamphub.net/',
+      href: 'https://revamp-hub.vercel.app/',
       texture: '/images/revamp.png',
       logo: '/images/RA_Logo.png',
       logoStyle: {
