@@ -6,7 +6,7 @@ import { myProjects } from '../constants';
 
 const SimpleProjectShowcase: React.FC = () => {
   // Only show the first 3 projects in this simple showcase
-  const featuredProjects = myProjects.slice(0, 3);
+  const featuredProjects = myProjects.slice(0, 4);
   
   return (
     <div className="w-[90%] mx-auto text-white py-20" id='work'>
@@ -47,8 +47,8 @@ const SimpleProjectShowcase: React.FC = () => {
           </motion.div>
         </div>
         
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Projects Grid - Changed to 2 columns on large screens */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {featuredProjects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -160,6 +160,5 @@ const SimpleProjectShowcase: React.FC = () => {
     </div>
   );
 };
-
 
 export { SimpleProjectShowcase };

@@ -221,6 +221,28 @@ const socialImgs = [
 ];
 
 const myProjects = [
+  {
+    title: 'Golden Mix - Ready Mix Concrete Solutions',
+    desc: 'Golden Mix specializes in high-quality ready mix concrete and related construction materials, providing reliable supply and delivery services for construction projects of all scales.',
+    subdesc:
+      'Built with React and Vite, styled with Tailwind CSS and enhanced with Framer Motion animations, delivering a modern, responsive experience that reflects the company\'s professional construction services.',
+    href: 'https://goldenmix.net/',
+    texture: '/images/goldenmix.png',
+    logo: '/images/golden-mix-logo.png',
+    logoStyle: {
+      backgroundColor: '#1A1A1A',
+      border: '0.2px solid #FFD700',
+      boxShadow: '0px 0px 20px 0px #FFD700',
+    },
+    spotlight: '/images/spotlight2.png',
+    tags: [
+      { id: 1, name: 'React.js', path: '/images/react.svg' },
+      { id: 2, name: 'Vite', path: '/images/vite.svg' },
+      { id: 3, name: 'TailwindCSS', path: '/images/tailwindcss.png' },
+      { id: 4, name: 'Framer Motion', path: '/images/framer.png' },
+    ],
+    githubLink: "https://github.com/mo2men165/golden-mix"
+  },
     {
       title: 'EGA - Digital Marketing Agency',
       desc: 'EGA is a forward-thinking digital marketing agency that helps brands scale with precision targeting, content strategy, and conversion-optimized campaigns across all platforms.',
@@ -284,7 +306,7 @@ const myProjects = [
         { id: 1, name: 'WordPress', path: '/images/wordpress-icon.svg' },
       ],
       githubLink: "https://www.outsourcing-eg.com/"
-    },  
+    },
 ];
 
 const portfolioProjects = [
