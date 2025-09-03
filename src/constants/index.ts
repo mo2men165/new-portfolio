@@ -103,10 +103,8 @@ const additionalSkills = [
     skills: [
       "Docker",
       "Kubernetes (basics)",
-      "AWS Services",
       "Vercel",
       "Netlify",
-      "DigitalOcean",
       "MongoDB Atlas",
       "Performance Optimization"
     ]
@@ -128,6 +126,22 @@ const expCards = [
       "Built modular, responsive React apps using hooks and context API.",
       "Created reusable components ensuring consistency and scalability.",
       "Integrated RESTful APIs and focused on performance and accessibility.",
+    ],
+  },
+  {
+    review:
+      "Mo'men demonstrates exceptional client relationship management and lead conversion expertise. His structured approach to pipeline management consistently drives results in our real estate operations.",
+    imgPath: "/images/resva.png",
+    imgClass: 'size-22',
+    logoPath: "/images/resva.png", 
+    logoClass: '',
+    nodeBG: 'bg-blue-900',
+    title: "Lead Manager",
+    date: "Mar 2025 – Present",
+    responsibilities: [
+      "Support real estate clients in managing lead pipelines and negotiating deals.",
+      "Maintain client relationships while driving lead conversion through structured outreach.",
+      "Arrange contracts and facilitate smooth transaction processes.",
     ],
   },
   {
