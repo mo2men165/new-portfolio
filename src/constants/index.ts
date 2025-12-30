@@ -196,6 +196,18 @@ const expCards = [
 
 const testimonials = [
   {
+    name: "Mohamed El-Ghamdy",
+    position: "My Invitation's CEO and Founder",
+    review:
+      "Moamen built an excellent platform for My Invitation. The interface is intuitive, the features work smoothly, and the overall user experience is outstanding. He was responsive throughout the project and delivered exactly what we needed. Our users love how easy it is to create and manage their invitations.",
+  },
+  {
+    name: "Abdelnabi Hosni El-Hamd",
+    position: "Golden Mix's CEO",
+    review:
+      "Working with Moamen on our website was a great experience. He created a professional, modern site that perfectly represents our construction business. The site loads quickly, looks great on all devices, and our customers find it easy to navigate and contact us. It's made a real difference in how we present ourselves online.",
+  },
+  {
     name: "Tarek Hasan",
     position: "RevAmp Hub's Co-Founder",
     review:
@@ -212,7 +224,7 @@ const testimonials = [
     position: "EGA's CEO",
     review:
       "Moamen did a fantastic job building our new bilingual website. He delivered a clean, modern design with Next.js and Tailwind that runs fast and works seamlessly across devices. He was professional, proactive, and easy to work with — the site has already improved our online presence",
-  },
+  }
 ];
 
 const socialImgs = [
@@ -235,6 +247,31 @@ const socialImgs = [
 ];
 
 const myProjects = [
+  {
+    title: 'My Invitation - Full Stack Event Management Platform',
+    desc: 'My Invitation is a full-stack MERN platform developed for the leading and first Saudi company in the digital invitation field, enabling users to create, manage, and customize digital invitations for events.',
+    subdesc:
+      'Built with Next.js, React, TypeScript, Node.js, Express.js, and MongoDB, My Invitation delivers a production-ready event management solution for the leading and first Saudi company in the digital invitation industry. The platform features 500+ exclusive invitation designs, comprehensive guest management, secure payment processing, Google Maps integration, and a fully Arabic RTL interface.',
+    href: 'https://www.myinvitation-sa.com/',
+    texture: '/images/myinvitation.png',
+    logo: '/images/myinvitationlogo.png',
+    logoStyle: {
+      backgroundColor: '#1A1A1A',
+      border: '0.2px solid #FFD700',
+      boxShadow: '0px 0px 20px 0px #FFD700',
+    },
+    spotlight: '/images/spotlight1.png',
+    tags: [
+      { id: 1, name: 'Next.js', path: '/images/next-icon.svg' },
+      { id: 2, name: 'React.js', path: '/images/react.svg' },
+      { id: 3, name: 'TypeScript', path: '/images/typescript.png' },
+      { id: 4, name: 'Node.js', path: '/images/node.svg' },
+      { id: 5, name: 'Express.js', path: '/images/express-white.png' },
+      { id: 6, name: 'MongoDB', path: '/images/mongo.png' },
+      { id: 7, name: 'TailwindCSS', path: '/images/tailwindcss.png' },
+    ],
+    githubLink: "https://github.com/mo2men165/My-Invitation"
+  },
   {
     title: 'Golden Mix - Ready Mix Concrete Solutions',
     desc: 'Golden Mix specializes in high-quality ready mix concrete and related construction materials, providing reliable supply and delivery services for construction projects of all scales.',
@@ -324,6 +361,29 @@ const myProjects = [
 ];
 
 const portfolioProjects = [
+  {
+    title: 'My Invitation - Full Stack Event Management Platform',
+    desc: 'My Invitation is a full-stack MERN platform developed for the leading and first Saudi company in the digital invitation field, enabling users to create, manage, and customize digital invitations for events.',
+    subdesc: 'Built with Next.js, React, TypeScript, Node.js, Express.js, and MongoDB, My Invitation delivers a production-ready event management solution for the leading and first Saudi company in the digital invitation industry. The platform features 500+ exclusive invitation designs, comprehensive guest management, secure payment processing, Google Maps integration, and a fully Arabic RTL interface.',
+    href: 'https://www.myinvitation-sa.com/',
+    logo: '/images/myinvitationlogo.png',
+    logoStyle: {
+      backgroundColor: '#1A1A1A',
+      border: '0.2px solid #FFD700',
+      boxShadow: '0px 0px 20px 0px #FFD700',
+    },
+    spotlight: '/images/spotlight1.png',
+    tags: [
+      { id: 1, name: 'Next.js', path: '/images/next-icon.svg' },
+      { id: 2, name: 'React.js', path: '/images/react.svg' },
+      { id: 3, name: 'TypeScript', path: '/images/typescript.png' },
+      { id: 4, name: 'Node.js', path: '/images/node.svg' },
+      { id: 5, name: 'Express.js', path: '/images/express-white.png' },
+      { id: 6, name: 'MongoDB', path: '/images/mongo.png' },
+      { id: 7, name: 'TailwindCSS', path: '/images/tailwindcss.png' },
+    ],
+    githubLink: "https://github.com/mo2men165/My-Invitation"
+  },
   {
     title: 'LiveDocs',
     desc: 'Real-time collaborative document editor',
