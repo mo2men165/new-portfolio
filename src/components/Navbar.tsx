@@ -35,9 +35,9 @@ const Navbar = () => {
     }
 
     // Throttle function to limit how often the scroll handler fires
-    const throttle = (fn: Function, delay: number) => {
+    const throttle = <T extends (...args: unknown[]) => unknown>(fn: T, delay: number) => {
       let lastCall = 0;
-      return (...args: any[]) => {
+      return (...args: Parameters<T>) => {
         const now = new Date().getTime();
         if (now - lastCall < delay) {
           return;
@@ -218,7 +218,7 @@ const Navbar = () => {
         }
       }
       
-      return closestSection || activeLink;
+      return closestSection || '';
     };
 
     const handleScroll = throttle(() => {
@@ -237,11 +237,14 @@ const Navbar = () => {
       
       // Only update state if the section has changed to avoid re-renders
       // Force update if activeLink is not in sectionCache (fixes Skills section issue)
-      const activeLinkIsValid = sectionCache.some(section => section.name === activeLink);
-      
-      if (currentSection && (currentSection !== activeLink || !activeLinkIsValid)) {
-        setActiveLink(currentSection);
-      }
+      setActiveLink((prevActiveLink) => {
+        const activeLinkIsValid = sectionCache.some(section => section.name === prevActiveLink);
+        
+        if (currentSection && (currentSection !== prevActiveLink || !activeLinkIsValid)) {
+          return currentSection;
+        }
+        return prevActiveLink;
+      });
     }, 100); // Throttle to 100ms (10 updates per second maximum)
 
     // Handle window resize - recalculate section positions
@@ -315,8 +318,8 @@ const Navbar = () => {
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-100 ${
         scrolled
-          ? "py-3 bg-gray-900/90 backdrop-blur-lg shadow-lg"
-          : "py-5 bg-transparent"
+          ? "py-6 xl:py-3 bg-gray-900/90 backdrop-blur-lg shadow-lg"
+          : "py-8 xl:py-5 bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
@@ -344,7 +347,7 @@ const Navbar = () => {
         </motion.a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:block">
+        <nav className="hidden lg:block">
           <ul className="flex items-center gap-8">
             {navLinks.map(({ link, name }, index) => (
               <motion.li
@@ -376,7 +379,7 @@ const Navbar = () => {
         {/* Contact Button */}
         <motion.a
           href="#contact"
-          className="relative group overflow-hidden"
+          className="hidden lg:block relative group overflow-hidden"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
@@ -412,10 +415,10 @@ const Navbar = () => {
         </motion.a>
 
         {/* Mobile Menu Button */}
-        <div className="block md:hidden">
+        <div className="block lg:hidden">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-white focus:outline-none"
+            className="text-white focus:outline-none cursor-pointer"
           >
             <div className="w-6 h-6 relative">
               <span
@@ -444,7 +447,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute w-full bg-gray-900/95 backdrop-blur-lg transition-all duration-100 overflow-hidden ${
+        className={`lg:hidden absolute w-full bg-gray-900/95 backdrop-blur-lg transition-all duration-100 overflow-hidden ${
           mobileMenuOpen ? "max-h-96" : "max-h-0"
         }`}
       >

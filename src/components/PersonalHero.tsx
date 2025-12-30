@@ -47,7 +47,7 @@ const PersonalHero = () => {
   ];
 
   return (
-    <div className="relative min-h-screen w-full text-white overflow-hidden">
+    <div className="relative min-h-screen w-full text-white overflow-hi my-60 xl:mt-0">
       {/* Background elements */}
       <div className="absolute top-32 right-20 w-80 h-80 rounded-full bg-blue-400/8 blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-purple-400/8 blur-3xl" />

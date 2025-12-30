@@ -39,16 +39,16 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-screen w-full text-white overflow-hidden">
+    <div className="relative min-h-screen w-full text-white overflow-hidden mt-24 xl:mt-0">
       {/* Background elements - only the blur gradients, no background color */}
       <div className="absolute top-20 left-10 w-96 h-96 rounded-full bg-blue-500/10 blur-3xl" />
       <div className="absolute bottom-10 right-20 w-96 h-96 rounded-full bg-purple-500/10 blur-3xl" />
       
-      <div className="relative container mx-auto px-6 py-16 z-10 h-screen flex items-center">
-        <div className="flex lg:flex-row w-[90%] justify-between gap-16 items-center">
+      <div className="relative container mx-auto px-6 py-16 z-10 min-h-screen flex items-center">
+        <div className="flex flex-col lg:flex-row w-full lg:w-[90%] justify-between gap-8 lg:gap-16 items-center">
           {/* Text Content (Left Side) */}
           <motion.div 
-            className="w-full"
+            className="w-full lg:flex-1"
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
             variants={containerVariants}
@@ -76,13 +76,13 @@ const Hero = () => {
               I craft responsive and performant web experiences with modern technologies. Specializing in React, TypeScript, and Node.js to build elegant solutions for complex problems.
             </motion.p>
             
-            <motion.div variants={itemVariants} className="flex items-center gap-4">
-              <a href="/about" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-white font-medium transition-colors duration-300">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a href="/about" className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-white font-medium transition-colors duration-300">
                 View My Work
                 <ArrowRight size={18} />
               </a>
               
-              <a href="#contact" className="flex items-center gap-2 bg-gray-800/50 hover:bg-gray-700/50 backdrop-blur-md px-6 py-3 rounded-lg text-gray-300 hover:text-white border border-gray-700/50 transition-all duration-300">
+              <a href="#contact" className="flex items-center justify-center gap-2 bg-gray-800/50 hover:bg-gray-700/50 backdrop-blur-md px-6 py-3 rounded-lg text-gray-300 hover:text-white border border-gray-700/50 transition-all duration-300">
                 Contact Me
               </a>
             </motion.div>
@@ -105,7 +105,7 @@ const Hero = () => {
           
           {/* Visual Element (Right Side) */}
           <motion.div 
-            className="w-full h-[500px] relative flex justify-center lg:justify-end"
+            className="w-full lg:flex-1 h-[400px] lg:h-[500px] relative flex justify-center lg:justify-end"
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
             variants={sphereVariants}
