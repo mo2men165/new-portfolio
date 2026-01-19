@@ -25,7 +25,7 @@ const PersonalHero = () => {
     visible: { 
       y: 0, 
       opacity: 1,
-      transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }
+      transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] as const }
     }
   };
 
@@ -34,7 +34,7 @@ const PersonalHero = () => {
     visible: {
       scale: 1,
       opacity: 1,
-      transition: { duration: 0.6, ease: "easeOut", delay: 0.8 }
+      transition: { duration: 0.6, ease: "easeOut" as const, delay: 0.8 }
     }
   };
 
@@ -47,7 +47,7 @@ const PersonalHero = () => {
   ];
 
   return (
-    <div className="relative min-h-screen w-full text-white overflow-hi my-60 xl:mt-0">
+    <div className="relative min-h-screen w-full text-white overflow-hi mt-60 xl:mt-0">
       {/* Background elements */}
       <div className="absolute top-32 right-20 w-80 h-80 rounded-full bg-blue-400/8 blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-purple-400/8 blur-3xl" />

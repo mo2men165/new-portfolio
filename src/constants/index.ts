@@ -199,7 +199,7 @@ const testimonials = [
     name: "Mohamed El-Ghamdy",
     position: "My Invitation's CEO and Founder",
     review:
-      "Moamen built an excellent platform for My Invitation. The interface is intuitive, the features work smoothly, and the overall user experience is outstanding. He was responsive throughout the project and delivered exactly what we needed. Our users love how easy it is to create and manage their invitations.",
+      "Innovative, highly creative, collaborative, very meticulous, experienced, understands client needs, expert in programming, quick to solve technical problems, and patient with client requirements.",
   },
   {
     name: "Abdelnabi Hosni El-Hamd",
@@ -361,29 +361,6 @@ const myProjects = [
 ];
 
 const portfolioProjects = [
-  {
-    title: 'My Invitation - Full Stack Event Management Platform',
-    desc: 'My Invitation is a full-stack MERN platform developed for the leading and first Saudi company in the digital invitation field, enabling users to create, manage, and customize digital invitations for events.',
-    subdesc: 'Built with Next.js, React, TypeScript, Node.js, Express.js, and MongoDB, My Invitation delivers a production-ready event management solution for the leading and first Saudi company in the digital invitation industry. The platform features 500+ exclusive invitation designs, comprehensive guest management, secure payment processing, Google Maps integration, and a fully Arabic RTL interface.',
-    href: 'https://www.myinvitation-sa.com/',
-    logo: '/images/myinvitationlogo.png',
-    logoStyle: {
-      backgroundColor: '#1A1A1A',
-      border: '0.2px solid #FFD700',
-      boxShadow: '0px 0px 20px 0px #FFD700',
-    },
-    spotlight: '/images/spotlight1.png',
-    tags: [
-      { id: 1, name: 'Next.js', path: '/images/next-icon.svg' },
-      { id: 2, name: 'React.js', path: '/images/react.svg' },
-      { id: 3, name: 'TypeScript', path: '/images/typescript.png' },
-      { id: 4, name: 'Node.js', path: '/images/node.svg' },
-      { id: 5, name: 'Express.js', path: '/images/express-white.png' },
-      { id: 6, name: 'MongoDB', path: '/images/mongo.png' },
-      { id: 7, name: 'TailwindCSS', path: '/images/tailwindcss.png' },
-    ],
-    githubLink: "https://github.com/mo2men165/My-Invitation"
-  },
   {
     title: 'LiveDocs',
     desc: 'Real-time collaborative document editor',
