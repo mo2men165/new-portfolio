@@ -20,7 +20,7 @@ const MernStackSkillsDisplay: React.FC = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+      transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }
     }
   };
 
@@ -29,12 +29,12 @@ const MernStackSkillsDisplay: React.FC = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+      transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }
     },
     hover: {
       y: -10,
       scale: 1.05,
-      transition: { duration: 0.3, ease: "easeOut" }
+      transition: { duration: 0.3, ease: "easeOut" as const }
     }
   };
 
